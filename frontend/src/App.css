@@ -1,0 +1,55 @@
+/* Smooth scroll behavior */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #0a0a0a;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #84cc16;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #a3e635;
+}
+
+/* Remove default App center alignment */
+.App {
+    min-height: 100vh;
+}
+
+/* Image loading optimization */
+img {
+    image-rendering: -webkit-optimize-contrast;
+}
+
+/* Focus ring improvements */
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+    outline: 2px solid #84cc16;
+    outline-offset: 2px;
+}
+
+/* Enhance button hover effects */
+button {
+    transition-property: background-color, border-color, color, transform, box-shadow;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 300ms;
+}
+
+button:hover {
+    transform: translateY(-1px);
+}
+
+button:active {
+    transform: translateY(0);
+}
